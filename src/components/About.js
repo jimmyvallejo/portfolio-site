@@ -35,7 +35,7 @@ const About = () => {
       </div>
       <div className="leading-7 flex flex-col justify-center lg:ml-10">
         <div className="flex items-center justify-center mr-6">
-          <img 
+          <img alt="me"
             className="bio rounded-xl mr-3 lg:mr-10 mb-10 lg:ml-0 "
             src={process.env.PUBLIC_URL + "/me.jpg"}
           ></img>

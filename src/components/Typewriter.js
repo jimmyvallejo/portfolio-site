@@ -1,8 +1,8 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 
 const Typewriter = (text, speed = 100) => {
   const [typewriterText, setTypewriterText] = useState("");
-  const hasRun = useRef(false);
+ 
 
   useEffect(() => {
   

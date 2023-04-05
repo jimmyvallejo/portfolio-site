@@ -30,7 +30,7 @@ const Footer = () => {
         Designed and Built by Jimmy Vallejo
       </p>
       <a className="cursor-pointer" href="https://github.com/jimmyvallejo">
-        <img
+        <img alt="github"
           className="w-6 ml-2"
           src="https://cdn-icons-png.flaticon.com/512/3291/3291695.png"
         ></img>
@@ -39,7 +39,7 @@ const Footer = () => {
         className="cursor-pointer"
         href="https://www.linkedin.com/in/jimmyvallejo/"
       >
-        <img
+        <img alt="linkedin"
           className="w-6 ml-2"
           src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png"
         ></img>
@@ -52,7 +52,7 @@ const Footer = () => {
         id="top"
         onClick={() => scroll.scrollToTop({ smooth: true, duration: 500 })}
       >
-        <img
+        <img alt="top"
           className="w-10 cursor-pointer opacity-70"
           src="https://cdn-icons-png.flaticon.com/512/3148/3148312.png"
           onClick={() => scroll.scrollToTop({ smooth: true, duration: 500 })}

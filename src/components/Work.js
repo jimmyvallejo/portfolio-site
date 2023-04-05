@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable react/jsx-no-comment-textnodes */
-import { Link } from "react-scroll";
 import Projects from "./Projects";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Work = () => {
   const p1Name = "Tipster";
