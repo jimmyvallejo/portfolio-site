@@ -60,7 +60,7 @@ const About = () => {
           <p className="mb-10 text-slate-400 lg:ml-20">
             Fast forward a few years and a few jobs ranging from
             customer-service to nightlife and {isWide && <br></br>} one day I
-            decided I wanted to make a change. I picked up coding one day and
+            decided I wanted to make a change. I picked up coding and
             discovered <br></br> I could get lost (enjoyably) in a project and
             have not looked back since.
           </p>

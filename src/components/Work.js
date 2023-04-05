@@ -145,7 +145,7 @@ const Work = () => {
               {p3Name}
             </a>
             <hr
-              className={`projecthr border-slate-300 w-16 ml-4 mt-1.5 ${
+              className={`projecthr border-slate-300 w-16 lg:ml-5 mt-1.5 ${
                 hr3 ? "ml-7" : ""
               } ${hr3 ? "fade-in-left" : ""}`}
             />
