@@ -51,7 +51,7 @@ const About = () => {
             </p>
           )}
           <p className="mb-3 text-slate-400 lg:ml-20 ">
-            My journey started a few years ago when i graduated from Florida
+            My journey started a few years ago when I graduated from Florida
             International University {isWide && <br></br>} with a degree in
             political science. While I liked politics, I ultimately decided I
             couldn't see <br></br> myself working in it full-time or moving to
