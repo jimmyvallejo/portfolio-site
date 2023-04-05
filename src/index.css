@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.preWrap {
+  white-space: pre-wrap;
+  text-indent: 20px;
+}
+
+
+body {
+  background-color:#0a192f;
+ 
+}
+
+nav {
+  background-color:#0a192f;
+  color: #64ffda;
+}
+
+#logo {
+  width: 100px;
+}
+
+.intro {
+  padding-top: 60px;
+}
+#me {
+  width: 400px;
+  opacity: 75%;
+   transition: opacity 300ms ease-in-out;
+}
+
+.bio {
+  width: 350px;
+  opacity: 60%;
+  transition: opacity 300ms ease-in-out;
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .bio {
+    opacity: 85%;
+  }
+}
+
+.bio:hover {
+  opacity: 90%;
+}
+
+
+#me:hover {
+  opacity: 80%;
+  
+}
+
+nav.down {
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 0.6s, transform 1.6s;
+}
+
+
+
+li {
+  opacity: 0;
+  transform: translateY(-2rem);
+  transition: opacity 0.6s, transform 1.6s;
+}
+
+li.fade-in-down {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.imgcontainer {
+  margin-left: 100px;
+}
+
+#tipster {
+  width: 600px;
+  height: 320px;
+   transition: opacity 300ms ease-in-out;
+}
+
+#tech {
+   transform: translateY(3rem);
+  transition: opacity 0.6s, transform 1.6s;
+}
+
+#tech.fade-in-down {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#projects {
+  margin-bottom: 100px !important;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.projecthr {
+  transform: translateX(-2rem);
+  transition: opacity 0.6s, transform 1.6s;
+}
+
+.fade-in-left {
+ animation: fadeInLeft 0.5s forwards;
+}
+
+@keyframes fadeInLeftNav {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left-nav {
+ animation: fadeInLeftNav 0.5s forwards;
+}
+
+
+.footer {
+  margin-bottom: 15px;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-120px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-top {
+ animation: fadeInTop 1s forwards;
+}
+
+#back-to-top {
+  
+ 
+  
+}
+
+#top {
+   position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+
+
+
+
