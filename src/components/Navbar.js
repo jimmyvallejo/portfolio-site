@@ -24,7 +24,8 @@ const Navbar = () => {
   const isWide = window.innerWidth > 1000;
 
   return (
-    <nav id="nav"
+    <nav
+      id="nav"
       className={`flex justify-between pt-6 fixed top-0 left-0 w-full z-10 h-17 ${
         scrollDirection === "up" ? "up" : ""
       } ${scrollDirection === "down" ? "down" : ""}`}

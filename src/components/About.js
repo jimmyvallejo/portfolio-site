@@ -35,7 +35,8 @@ const About = () => {
       </div>
       <div className="leading-7 flex flex-col justify-center lg:ml-10">
         <div className="flex items-center justify-center mr-6">
-          <img alt="me"
+          <img
+            alt="me"
             className="bio rounded-xl mr-3 lg:mr-10 mb-10 lg:ml-0 "
             src={process.env.PUBLIC_URL + "/me.jpg"}
           ></img>
@@ -60,9 +61,9 @@ const About = () => {
           <p className="mb-10 text-slate-400 lg:ml-20">
             Fast forward a few years and a few jobs ranging from
             customer-service to nightlife and {isWide && <br></br>} one day I
-            decided I wanted to make a change. I picked up coding and
-            discovered <br></br> I could get lost (enjoyably) in a project and
-            have not looked back since.
+            decided I wanted to make a change. I picked up coding and discovered{" "}
+            <br></br> I could get lost (enjoyably) in a project and have not
+            looked back since.
           </p>
           <p className="mb-7 text-slate-400 text-center  lg:ml-0">
             Some of the technologies i've learned along the way.

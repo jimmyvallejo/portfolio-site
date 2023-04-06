@@ -2,11 +2,8 @@ import { useEffect, useState } from "react";
 
 const Typewriter = (text, speed = 100) => {
   const [typewriterText, setTypewriterText] = useState("");
- 
 
   useEffect(() => {
-  
-
     let index = 0;
     const intervalId = setInterval(() => {
       if (index < text.length) {
@@ -17,8 +14,6 @@ const Typewriter = (text, speed = 100) => {
         clearInterval(intervalId);
       }
     }, speed);
-
-   
 
     return () => clearInterval(intervalId);
   }, [text, speed]);

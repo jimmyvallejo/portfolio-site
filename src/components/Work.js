@@ -85,7 +85,10 @@ const Work = () => {
   };
 
   return (
-    <div id="projects" className="flex flex-col items-center justify-center mt-40 pt-10">
+    <div
+      id="projects"
+      className="flex flex-col items-center justify-center mt-40 pt-10"
+    >
       <div className="flex items-center mb-10">
         <hr className="border-slate-300 w-20 lg:w-40 mx-4" />
         <h1 className="text-2xl text-slate-300">Projects</h1>
@@ -145,9 +148,9 @@ const Work = () => {
               {p3Name}
             </a>
             <hr
-              className={`projecthr border-slate-300 w-16 lg:ml-5 mt-1.5 ${
-                hr3 ? "ml-7" : ""
-              } ${hr3 ? "fade-in-left" : ""}`}
+              className={`lasthr border-slate-300 w-16 ml-5 lg:ml-5 mt-1.5 ${
+                hr3 ? "fade-in-left" : ""
+              }`}
             />
           </div>
         ) : (
