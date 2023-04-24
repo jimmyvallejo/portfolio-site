@@ -103,7 +103,7 @@ const Work = () => {
         <h1 className="text-2xl text-slate-300">Projects</h1>
         <hr className="border-slate-300 w-20 lg:w-40 mx-4" />
       </div>
-      <div className="mb-20 flex flex-row lg:pl-2">
+      <div className=" mb-10 lg:mb-20 flex flex-row lg:pl-2">
         {hr1 ? (
           <div className="flex flex-col justify-center">
             <a
