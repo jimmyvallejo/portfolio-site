@@ -80,6 +80,13 @@ li.fade-in-down {
    transition: opacity 300ms ease-in-out;
 }
 
+@media screen and (max-width: 1000px) {
+  #tipster {
+    width: 300px;
+    height: 150px;
+  }
+}
+
 #tech {
    transform: translateY(3rem);
   transition: opacity 0.6s, transform 1.6s;
