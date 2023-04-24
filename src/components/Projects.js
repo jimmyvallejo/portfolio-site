@@ -25,12 +25,16 @@ const Projects = ({ project, tech, source, git, img }) => {
   return (
     <div className="flex lg:flex-row flex-col">
       <div className="mr-3 ml-3 lg:mr-20">
-        <img
-          alt="project"
-          id="tipster"
-          className="mb-10 rounded-md opacity-80 lg:opacity-60 hover:opacity-90"
-          src={img}
-        ></img>
+        {!img ? (
+          "...Loading"
+        ) : (
+          <img
+            alt="project"
+            id="tipster"
+            className="mb-10 rounded-md opacity-80 lg:opacity-60 hover:opacity-90"
+            src={img}
+          ></img>
+        )}
       </div>
       <div
         className={isSmall ? "flex flex-col justify-center items-center" : ""}

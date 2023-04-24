@@ -7,6 +7,7 @@ const Work = () => {
   const p1Name = "Tipster";
   const p2Name = "Lairbnb";
   const p3Name = "Breakout";
+  const p4Name = "Thinkbot"
 
   const p1 = `Full-stack app using React, Express, and MongoDB. 
   It's a mix of Twitter, Craigslist, and Yelp, with weather, Stripe, and 
@@ -23,21 +24,29 @@ const Work = () => {
   programming. Experience an engaging and challenging gameplay 
   loop with advanced collision detection and ball physics.`;
 
+  const p4 = `AI tutor created for the 2023 Emerge Americas hackathon. 
+  Students get personalized responses from the AI based on subject and age. 
+  Teachers get access to dynamic student data.`;
+
   const p1Tech = "React | Express | MongoDB | Node.js";
   const p2Tech = "HandleBars | Express | MongoDB | Node.js";
   const p3Tech = "JavaScript | Canvas | HTML | CSS";
+  const p4Tech = "React | Express | MongoDB | OpenAI" ;
 
   const p1Img = process.env.PUBLIC_URL + "tipster.png";
   const p2Img = process.env.PUBLIC_URL + "lairbnb1.png";
   const p3Img = process.env.PUBLIC_URL + "brick.png";
+  const p4Img = process.env.PUBLIC_URL + "fourth.png";
 
   const p1Source = "https://tipster-app.netlify.app/";
   const p2Source = "https://lairbnb.fly.dev/";
   const p3Source = "https://github.com/jimmyvallejo/Breakout-Game-2D";
+  const p4Source = "https://thinkbot.netlify.app/";
 
   const p1Git = "https://github.com/jimmyvallejo/tipster-front-end";
   const p2Git = "https://github.com/jimmyvallejo/Lair-Bnb-Project";
   const p3Git = "https://jimmyvallejo.github.io/Breakout-Game-2D/";
+  const p4Git = "https://github.com/jimmyvallejo/ThinkBot-Frontend";
 
   const [img, setImg] = useState(p1Img);
   const [text, setText] = useState(p1);
@@ -61,12 +70,12 @@ const Work = () => {
   };
 
   const change2 = () => {
-    setText(p2);
-    setImg(p2Img);
+    setText(p4);
+    setImg(p4Img);
     setTech("");
-    setTech(p2Tech);
-    setSource(p2Source);
-    setGit(p2Git);
+    setTech(p4Tech);
+    setSource(p4Source);
+    setGit(p4Git);
     setHr3(false);
     setHr1(false);
     setHr2(true);
@@ -121,9 +130,9 @@ const Work = () => {
           <div className="flex flex-col justify-center">
             <a
               onClick={() => change2()}
-              className="mr-10 text-xl text-red-300 hover:text-red-400 cursor-pointer"
+              className="mr-10 text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
             >
-              {p2Name}
+              {p4Name}
             </a>
             <hr
               className={`projecthr border-slate-300 w-16 ml-3 mt-1.5  ${
@@ -134,16 +143,16 @@ const Work = () => {
         ) : (
           <a
             onClick={() => change2()}
-            className="mr-10 text-xl text-red-300 hover:text-red-400 cursor-pointer"
+            className="mr-10 text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
           >
-            {p2Name}
+            {p4Name}
           </a>
         )}
         {hr3 ? (
           <div className="flex flex-col justify-center">
             <a
               onClick={() => change3()}
-              className={`text-xl text-purple-200 cursor-pointer hover:text-purple-300`}
+              className={`text-xl text-purple-300 cursor-pointer hover:text-purple-500`}
             >
               {p3Name}
             </a>
@@ -156,7 +165,7 @@ const Work = () => {
         ) : (
           <a
             onClick={() => change3()}
-            className="text-xl text-purple-200 cursor-pointer hover:text-purple-300"
+            className="text-xl text-purple-300 cursor-pointer hover:text-purple-400"
           >
             {p3Name}
           </a>
