@@ -138,7 +138,7 @@ const Navbar = () => {
         )}
         {isWide && (
           <a
-            href="https://drive.google.com/file/d/1F3SR7_SFL2Dxgxa2-pNdMsWB7A9PyYj6/view?usp=share_link"
+            href="https://drive.google.com/file/d/1B-hD2IIuH_C7uzIOUljYh0lvvvntENKh/view?usp=share_link"
             className="mx-4 hover:text-green-300 cursor-pointer"
           >
             Resume

@@ -37,7 +37,7 @@ const Intro = () => {
           ></p>
           <div>
             <a
-              href="https://drive.google.com/file/d/1F3SR7_SFL2Dxgxa2-pNdMsWB7A9PyYj6/view?usp=share_link"
+              href="https://drive.google.com/file/d/1B-hD2IIuH_C7uzIOUljYh0lvvvntENKh/view?usp=share_link"
               className="resume inline-block border-solid border-2 border-green-200 text-green-200 text-center mt-10 py-2 px-5 hover:bg-green-200 hover:bg-opacity-50 cursor-pointer transition-all duration-300 ease-in-out"
             >
               Resume
