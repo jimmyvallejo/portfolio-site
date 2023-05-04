@@ -135,7 +135,7 @@ const Work = () => {
               {p4Name}
             </a>
             <hr
-              className={`projecthr border-slate-300 w-16 ml-3 mt-1.5  ${
+              className={`projecthr border-slate-300 w-16 ml-3.5 mt-1.5 = ${
                 hr2 ? "fade-in-left" : ""
               }`}
             />
@@ -157,7 +157,7 @@ const Work = () => {
               {p3Name}
             </a>
             <hr
-              className={`lasthr border-slate-300 w-16 ml-5 lg:ml-5 mt-1.5 ${
+              className={`lasthr border-slate-300 w-16 ml-5 lg:ml-3.5 mt-1.5 ${
                 hr3 ? "fade-in-left" : ""
               }`}
             />
