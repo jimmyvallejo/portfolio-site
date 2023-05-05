@@ -8,7 +8,7 @@ const Intro = () => {
   const text = `I'm a software engineer with a focus on building dynamic and
               scalable applications with React.js. My goal is to make
               intuitive solutions to real world problems through my design, 
-              and my code. I am currently open to new work opportunities.`;
+              and my code. I am currently open to new employment opportunities.`;
 
   const typewriterText = Typewriter(text, 30);
 

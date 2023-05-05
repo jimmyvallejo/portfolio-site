@@ -66,7 +66,7 @@ const About = () => {
             looked back since.
           </p>
           <p className="mb-7 text-slate-400 text-center  lg:ml-0">
-            Some of the technologies i've learned along the way.
+            Some of the technologies I've learned along the way.
           </p>
         </div>
       </div>
