@@ -33,10 +33,10 @@ const Work = () => {
   const p3Tech = "JavaScript | Canvas | HTML | CSS";
   const p4Tech = "React | Express | MongoDB | OpenAI" ;
 
-  const p1Img = process.env.PUBLIC_URL + "tipster.png";
+  const p1Img = process.env.PUBLIC_URL + "tipster.jpg";
   // const p2Img = process.env.PUBLIC_URL + "lairbnb1.png";
-  const p3Img = process.env.PUBLIC_URL + "brick.png";
-  const p4Img = process.env.PUBLIC_URL + "fourth.png";
+  const p3Img = process.env.PUBLIC_URL + "brick.jpg";
+  const p4Img = process.env.PUBLIC_URL + "fourth.jpg";
 
   const p1Source = "https://tipster-app.netlify.app/";
   // const p2Source = "https://lairbnb.fly.dev/";
