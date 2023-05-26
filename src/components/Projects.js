@@ -39,7 +39,7 @@ const Projects = ({ project, tech, source, git, img }) => {
       <div
         className={isSmall ? "flex flex-col justify-center items-center" : ""}
       >
-        <p className="lg:text-left text-center mb-10 text-slate-400 leading-10 lg:leading-8  mr-2 lg:mr-0 w-80">
+        <p className="lg:text-left text-center mb-10 text-slate-400 leading-10 lg:leading-8  ml-4 lg:mr-0 w-80">
           {project}
         </p>
         <div className="flex justify-center mb-12 lg:mr-10">

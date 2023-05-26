@@ -8,6 +8,7 @@ const Work = () => {
   // const p2Name = "Lairbnb";
   const p3Name = "Breakout";
   const p4Name = "Thinkbot"
+  const p5Name = "ChatMD"
 
   const p1 = `Full-stack app using React, Express, and MongoDB. 
   It's a mix of Twitter, Craigslist, and Yelp, with weather, Stripe, and 
@@ -28,34 +29,44 @@ const Work = () => {
   Students get personalized responses from the AI based on subject and age. 
   Teachers get access to dynamic student data.`;
 
+  const p5 =
+    `ChatMD is an AI replacement for WebMD. Get access to responses 
+    tailored to your pre-existing conditions, search for local 
+    medical providers, save your chats for later, and more.`;
+
   const p1Tech = "React | Express | MongoDB | Node.js";
   // const p2Tech = "HandleBars | Express | MongoDB | Node.js";
   const p3Tech = "JavaScript | Canvas | HTML | CSS";
   const p4Tech = "React | Express | MongoDB | OpenAI" ;
+  
 
   const p1Img = process.env.PUBLIC_URL + "tipster.jpg";
   // const p2Img = process.env.PUBLIC_URL + "lairbnb1.png";
   const p3Img = process.env.PUBLIC_URL + "brick.jpg";
   const p4Img = process.env.PUBLIC_URL + "fourth.jpg";
+  const p5Img = process.env.PUBLIC_URL + "2.png";
 
   const p1Source = "https://tipster-app.netlify.app/";
   // const p2Source = "https://lairbnb.fly.dev/";
   const p3Source = "https://github.com/jimmyvallejo/Breakout-Game-2D";
   const p4Source = "https://thinkbot.netlify.app/";
+  const p5Source = "https://chat-md.netlify.app/";
 
   const p1Git = "https://github.com/jimmyvallejo/tipster-front-end";
   // const p2Git = "https://github.com/jimmyvallejo/Lair-Bnb-Project";
   const p3Git = "https://jimmyvallejo.github.io/Breakout-Game-2D/";
   const p4Git = "https://github.com/jimmyvallejo/ThinkBot-Frontend";
+  const p5Git = "https://github.com/jimmyvallejo/ChatMD-Frontend";
 
-  const [img, setImg] = useState(p1Img);
-  const [text, setText] = useState(p1);
-  const [tech, setTech] = useState(p1Tech);
-  const [source, setSource] = useState(p1Source);
-  const [git, setGit] = useState(p1Git);
-  const [hr1, setHr1] = useState(true);
+  const [img, setImg] = useState(p5Img);
+  const [text, setText] = useState(p5);
+  const [tech, setTech] = useState(p4Tech);
+  const [source, setSource] = useState(p5Source);
+  const [git, setGit] = useState(p5Git);
+  const [hr1, setHr1] = useState(false);
   const [hr2, setHr2] = useState(false);
   const [hr3, setHr3] = useState(false);
+  const [hr4, setHr4] = useState(true)
 
   const change1 = () => {
     setText(p1);
@@ -66,6 +77,7 @@ const Work = () => {
     setGit(p1Git);
     setHr2(false);
     setHr3(false);
+    setHr4(false);
     setHr1(true);
   };
 
@@ -78,6 +90,7 @@ const Work = () => {
     setGit(p4Git);
     setHr3(false);
     setHr1(false);
+    setHr4(false);
     setHr2(true);
   };
 
@@ -90,8 +103,22 @@ const Work = () => {
     setGit(p3Git);
     setHr1(false);
     setHr2(false);
+    setHr4(false);
     setHr3(true);
   };
+
+    const change4 = () => {
+      setText(p5);
+      setImg(p5Img);
+      setTech("");
+      setTech(p4Tech);
+      setSource(p5Source);
+      setGit(p5Git);
+      setHr1(false);
+      setHr2(false);
+      setHr3(false)
+      setHr4(true);
+    };
 
   return (
     <div
@@ -104,6 +131,28 @@ const Work = () => {
         <hr className="border-slate-300 w-20 lg:w-40 mx-4" />
       </div>
       <div className=" mb-10 lg:mb-20 flex flex-row lg:pl-2">
+        {hr4 ? (
+          <div className="flex flex-col justify-center">
+            <a
+              onClick={change4}
+              className="mr-10 text-xl text-red-300 hover:text-red-400 cursor-pointer"
+            >
+              {p5Name}
+            </a>
+            <hr
+              className={`projecthr border-slate-300 w-16 ml-1.5 mt-1.5 ${
+                hr4 ? "fade-in-left" : ""
+              }`}
+            />
+          </div>
+        ) : (
+          <a
+            onClick={change4}
+            className="mr-10 text-xl text-red-300 hover:text-red-400 cursor-pointer"
+          >
+            {p5Name}
+          </a>
+        )}
         {hr1 ? (
           <div className="flex flex-col justify-center">
             <a
