@@ -135,7 +135,7 @@ const Work = () => {
           <div className="flex flex-col justify-center">
             <a
               onClick={change4}
-              className="mr-10 text-xl text-red-300 hover:text-red-400 cursor-pointer"
+              className="lg:mr-10 mr-3 text-xl text-red-300 hover:text-red-400 cursor-pointer"
             >
               {p5Name}
             </a>
@@ -148,7 +148,7 @@ const Work = () => {
         ) : (
           <a
             onClick={change4}
-            className="mr-10 text-xl text-red-300 hover:text-red-400 cursor-pointer"
+            className="lg:mr-10 mr-3 text-xl text-red-300 hover:text-red-400 cursor-pointer"
           >
             {p5Name}
           </a>
@@ -157,7 +157,7 @@ const Work = () => {
           <div className="flex flex-col justify-center">
             <a
               onClick={change1}
-              className="mr-10 text-xl text-blue-200 hover:text-blue-400 cursor-pointer"
+              className="lg:mr-10 mr-3 text-xl text-blue-200 hover:text-blue-400 cursor-pointer"
             >
               {p1Name}
             </a>
@@ -170,7 +170,7 @@ const Work = () => {
         ) : (
           <a
             onClick={change1}
-            className="mr-10 text-xl text-blue-200 hover:text-blue-400 cursor-pointer"
+            className="lg:mr-10 mr-3 text-xl text-blue-200 hover:text-blue-400 cursor-pointer"
           >
             {p1Name}
           </a>
@@ -179,7 +179,7 @@ const Work = () => {
           <div className="flex flex-col justify-center">
             <a
               onClick={() => change2()}
-              className="mr-10 text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
+              className="lg:mr-10 mr-3 text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
             >
               {p4Name}
             </a>
@@ -192,7 +192,7 @@ const Work = () => {
         ) : (
           <a
             onClick={() => change2()}
-            className="mr-10 text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
+            className="lg:mr-10 mr-3 text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
           >
             {p4Name}
           </a>
