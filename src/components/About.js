@@ -81,7 +81,7 @@ const About = () => {
           <li className="list opacity-0 mt-2">- JavaScript</li>
           <li className="list opacity-0 mt-2">- TypeScript</li>
           <li className="list opacity-0 mt-2">- Tailwind</li>
-          <li className="list opacity-0 mt-2">- Handlebars</li>
+          <li className="list opacity-0 mt-2">- MaterialUi</li>
         </ol>
       </div>
     </div>

@@ -135,12 +135,12 @@ const Work = () => {
           <div className="flex flex-col justify-center">
             <a
               onClick={change4}
-              className="lg:mr-10 mr-3 text-xl text-red-300 hover:text-red-400 cursor-pointer"
+              className="lg:mr-10 pr-5 lg:pr-0 lg:text-xl text-red-300 hover:text-red-400 cursor-pointer"
             >
               {p5Name}
             </a>
             <hr
-              className={`projecthr border-slate-300 w-16 ml-1.5 mt-1.5 ${
+              className={`projecthr border-slate-300 w-16 lg:ml-1.5 mt-1.5 ${
                 hr4 ? "fade-in-left" : ""
               }`}
             />
@@ -148,7 +148,7 @@ const Work = () => {
         ) : (
           <a
             onClick={change4}
-            className="lg:mr-10 mr-3 text-xl text-red-300 hover:text-red-400 cursor-pointer"
+            className="lg:mr-10 pr-5 lg:pr-0 lg:text-xl text-red-300 hover:text-red-400 cursor-pointer"
           >
             {p5Name}
           </a>
@@ -157,12 +157,12 @@ const Work = () => {
           <div className="flex flex-col justify-center">
             <a
               onClick={change1}
-              className="lg:mr-10 mr-3 text-xl text-blue-200 hover:text-blue-400 cursor-pointer"
+              className="lg:mr-10  pr-5 lg:pr-0 lg:text-xl text-blue-200 hover:text-blue-400 cursor-pointer"
             >
               {p1Name}
             </a>
             <hr
-              className={`projecthr border-slate-300 w-16 ml-2.5 mt-1.5 ${
+              className={`projecthr border-slate-300 w-16 lg:ml-2.5 ml-1 mt-1.5 ${
                 hr1 ? "fade-in-left" : ""
               }`}
             />
@@ -170,7 +170,7 @@ const Work = () => {
         ) : (
           <a
             onClick={change1}
-            className="lg:mr-10 mr-3 text-xl text-blue-200 hover:text-blue-400 cursor-pointer"
+            className="lg:mr-10  pr-5 lg:pr-0 lg:text-xl text-blue-200 hover:text-blue-400 cursor-pointer"
           >
             {p1Name}
           </a>
@@ -179,12 +179,12 @@ const Work = () => {
           <div className="flex flex-col justify-center">
             <a
               onClick={() => change2()}
-              className="lg:mr-10 mr-3 text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
+              className="lg:mr-10  pr-5 lg:pr-0 lg:text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
             >
               {p4Name}
             </a>
             <hr
-              className={`projecthr border-slate-300 w-16 ml-3.5 mt-1.5 = ${
+              className={`projecthr border-slate-300 w-16 lg:ml-3.5 ml-2 mt-1.5 = ${
                 hr2 ? "fade-in-left" : ""
               }`}
             />
@@ -192,7 +192,7 @@ const Work = () => {
         ) : (
           <a
             onClick={() => change2()}
-            className="lg:mr-10 mr-3 text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
+            className="lg:mr-10  pr-5 lg:pr-0 lg:text-xl text-orange-300 hover:text-orange-400 cursor-pointer"
           >
             {p4Name}
           </a>
@@ -201,12 +201,12 @@ const Work = () => {
           <div className="flex flex-col justify-center">
             <a
               onClick={() => change3()}
-              className={`text-xl text-purple-300 cursor-pointer hover:text-purple-500`}
+              className={`lg:text-xl pr-0  lg:pr-0 text-purple-300 cursor-pointer hover:text-purple-500`}
             >
               {p3Name}
             </a>
             <hr
-              className={`lasthr border-slate-300 w-16 ml-5 lg:ml-3.5 mt-1.5 ${
+              className={`lasthr border-slate-300 w-16 ml-2 lg:ml-3.5 mt-1.5 ${
                 hr3 ? "fade-in-left" : ""
               }`}
             />
@@ -214,7 +214,7 @@ const Work = () => {
         ) : (
           <a
             onClick={() => change3()}
-            className="text-xl text-purple-300 cursor-pointer hover:text-purple-400"
+            className="lg:text-xl lg:pr-0 text-purple-300 cursor-pointer hover:text-purple-400"
           >
             {p3Name}
           </a>
