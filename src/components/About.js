@@ -41,29 +41,29 @@ const About = () => {
             src={process.env.PUBLIC_URL + "/me.jpg"}
           ></img>
         </div>
-        <div className="mr-10 text-lg lg:text-base">
+        <div className="mr-10 text-lg lg:text-base  flex flex-col justify-start ">
           {isWide && (
             <p className="text-slate-400 mb-3 lg:ml-20 ">
               Hi there! My name is Jimmy and it my sound cliche, but my passion
-              for creating <br></br> came from wanting to help the world. Now I
-              don't mean this in a Batman type of way, <br></br> I simply want
-              to create things that could make someones life easier, even if
-              just a little.
+              for creating <br></br> came from wanting to help the world. It all
+              sounds pretty cliche but in reality, <br></br> i simply want to
+              create things that could make someones life easier, even if just a
+              little.
             </p>
           )}
           <p className="mb-3 text-slate-400 lg:ml-20 ">
             My journey started a few years ago when I graduated from Florida
             International University {isWide && <br></br>} with a degree in
             political science. While I liked politics, I ultimately decided I
-            couldn't see <br></br> myself working in it full-time or moving to
-            Washington D.C.
+            couldn't {isWide && <br></br>} see myself working in it full-time or
+            moving to Washington D.C.
           </p>
           <p className="mb-10 text-slate-400 lg:ml-20">
             Fast forward a few years and a few jobs ranging from
             customer-service to nightlife and {isWide && <br></br>} one day I
             decided I wanted to make a change. I picked up coding and discovered{" "}
-            <br></br> I could get lost (enjoyably) in a project and have not
-            looked back since.
+            {isWide && <br></br>} I could get lost (enjoyably) in a project and
+            haven't looked back since.
           </p>
           <p className="mb-7 text-slate-400 text-center  lg:ml-0">
             Some of the technologies I've learned along the way.
