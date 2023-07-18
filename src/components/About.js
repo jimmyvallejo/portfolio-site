@@ -38,7 +38,7 @@ const About = () => {
           <img
             alt="me"
             className="bio rounded-xl mr-3 lg:mr-10 mb-10 lg:ml-0 "
-            src={process.env.PUBLIC_URL + "/me.jpg"}
+            src={process.env.PUBLIC_URL + "/me2.jpeg"}
           ></img>
         </div>
         <div className="mr-10 text-lg lg:text-base  flex flex-col justify-start ">
