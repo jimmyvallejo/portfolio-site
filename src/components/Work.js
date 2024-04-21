@@ -2,62 +2,33 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import Projects from "./Projects";
 import { useState } from "react";
+import {
+  p1Name,
+  p3Name,
+  p4Name,
+  p5Name,
+  p1,
+  p3,
+  p4,
+  p5,
+  p1Tech,
+  p3Tech,
+  p4Tech,
+  p1Img,
+  p3Img,
+  p4Img,
+  p5Img,
+  p1Source,
+  p3Source,
+  p4Source,
+  p5Source,
+  p1Git,
+  p3Git,
+  p4Git,
+  p5Git,
+} from "../constants/personal_projects";
 
 const Work = () => {
-  const p1Name = "Tipster";
-  // const p2Name = "Lairbnb";
-  const p3Name = "Breakout";
-  const p4Name = "Thinkbot"
-  const p5Name = "ChatMD"
-
-  const p1 = `Full-stack app using React, Express, and MongoDB. 
-  It's a mix of Twitter, Craigslist, and Yelp, with weather, Stripe, and 
-  Google Maps API for payments and location features. Share information about local businesses, traffic, 
-  or entertainment, post classified ads, or connect with others.`;
-
-  // const p2 = `Lairbnb is a full-stack web app for supervillains 
-  // built with Express, MongoDB, JavaScript, and Handlebars.
-  //  It is like Airbnb, but for evil lairs, with advanced 
-  //  search filters, security features, and payment processing.`;
-
-  const p3 = `Breakout, a classic arcade game remade in JavaScript 
-  canvas with clean and reusable code using class-based 
-  programming. Experience an engaging and challenging gameplay 
-  loop with advanced collision detection and ball physics.`;
-
-  const p4 = `AI tutor created for the 2023 Emerge Americas hackathon. 
-  Students get personalized responses from the AI based on subject and age. 
-  Teachers get access to dynamic student data.`;
-
-  const p5 =
-    `ChatMD is an AI replacement for WebMD. Get access to responses 
-    tailored to your pre-existing conditions, search for local 
-    medical providers, save your chats for later, and more.`;
-
-  const p1Tech = "React | Express | MongoDB | Node.js";
-  // const p2Tech = "HandleBars | Express | MongoDB | Node.js";
-  const p3Tech = "JavaScript | Canvas | HTML | CSS";
-  const p4Tech = "React | Express | MongoDB | OpenAI" ;
-  
-
-  const p1Img = process.env.PUBLIC_URL + "tipster.jpg";
-  // const p2Img = process.env.PUBLIC_URL + "lairbnb1.png";
-  const p3Img = process.env.PUBLIC_URL + "brick.jpg";
-  const p4Img = process.env.PUBLIC_URL + "fourth.jpg";
-  const p5Img = process.env.PUBLIC_URL + "2.png";
-
-  const p1Source = "https://tipster-app.netlify.app/";
-  // const p2Source = "https://lairbnb.fly.dev/";
-  const p3Source = "https://github.com/jimmyvallejo/Breakout-Game-2D";
-  const p4Source = "https://thinkbot.netlify.app/";
-  const p5Source = "https://chat-md.netlify.app/";
-
-  const p1Git = "https://github.com/jimmyvallejo/tipster-front-end";
-  // const p2Git = "https://github.com/jimmyvallejo/Lair-Bnb-Project";
-  const p3Git = "https://jimmyvallejo.github.io/Breakout-Game-2D/";
-  const p4Git = "https://github.com/jimmyvallejo/ThinkBot-Frontend";
-  const p5Git = "https://github.com/jimmyvallejo/ChatMD-Frontend";
-
   const [img, setImg] = useState(p5Img);
   const [text, setText] = useState(p5);
   const [tech, setTech] = useState(p4Tech);
@@ -66,7 +37,7 @@ const Work = () => {
   const [hr1, setHr1] = useState(false);
   const [hr2, setHr2] = useState(false);
   const [hr3, setHr3] = useState(false);
-  const [hr4, setHr4] = useState(true)
+  const [hr4, setHr4] = useState(true);
 
   const change1 = () => {
     setText(p1);
@@ -107,18 +78,18 @@ const Work = () => {
     setHr3(true);
   };
 
-    const change4 = () => {
-      setText(p5);
-      setImg(p5Img);
-      setTech("");
-      setTech(p4Tech);
-      setSource(p5Source);
-      setGit(p5Git);
-      setHr1(false);
-      setHr2(false);
-      setHr3(false)
-      setHr4(true);
-    };
+  const change4 = () => {
+    setText(p5);
+    setImg(p5Img);
+    setTech("");
+    setTech(p4Tech);
+    setSource(p5Source);
+    setGit(p5Git);
+    setHr1(false);
+    setHr2(false);
+    setHr3(false);
+    setHr4(true);
+  };
 
   return (
     <div
@@ -131,6 +102,28 @@ const Work = () => {
         <hr className="border-slate-300 w-20 lg:w-40 mx-4" />
       </div>
       <div className=" mb-10 lg:mb-20 flex flex-row lg:pl-2">
+        {hr3 ? (
+          <div className="flex flex-col justify-center">
+            <a
+              onClick={() => change3()}
+              className={`lg:text-xl pr-0 mr-7 lg:pr-0 text-purple-300 cursor-pointer hover:text-purple-500`}
+            >
+              {p3Name}
+            </a>
+            <hr
+              className={`lasthr border-slate-300 w-16 ml-2 lg:ml-3.5 mt-1.5 ${
+                hr3 ? "fade-in-left" : ""
+              }`}
+            />
+          </div>
+        ) : (
+          <a
+            onClick={() => change3()}
+            className="lg:text-xl mr-7 lg:pr-0 text-purple-300 cursor-pointer hover:text-purple-400"
+          >
+            {p3Name}
+          </a>
+        )}
         {hr4 ? (
           <div className="flex flex-col justify-center">
             <a
@@ -197,28 +190,7 @@ const Work = () => {
             {p4Name}
           </a>
         )}
-        {hr3 ? (
-          <div className="flex flex-col justify-center">
-            <a
-              onClick={() => change3()}
-              className={`lg:text-xl pr-0  lg:pr-0 text-purple-300 cursor-pointer hover:text-purple-500`}
-            >
-              {p3Name}
-            </a>
-            <hr
-              className={`lasthr border-slate-300 w-16 ml-2 lg:ml-3.5 mt-1.5 ${
-                hr3 ? "fade-in-left" : ""
-              }`}
-            />
-          </div>
-        ) : (
-          <a
-            onClick={() => change3()}
-            className="lg:text-xl lg:pr-0 text-purple-300 cursor-pointer hover:text-purple-400"
-          >
-            {p3Name}
-          </a>
-        )}
+        
       </div>
       <Projects
         project={text}

@@ -5,10 +5,10 @@ const Intro = () => {
   const textRef = useState(null);
   const [animate, setAnimate] = useState(false);
 
-  const text = `I'm a software engineer with a focus on building dynamic and
-              scalable applications with React.js. My goal is to make
+  const text = `I'm a full-stack developer with a focus on building dynamic and
+              scalable applications. My goal is to make
               intuitive solutions to real world problems through my design, 
-              and my code. I am currently open to new employment opportunities.`;
+              and my code. Currently employed at Cryptan Labs.`;
 
   const typewriterText = Typewriter(text, 30);
 

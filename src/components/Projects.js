@@ -1,11 +1,8 @@
 import { useState } from "react";
 
-
-
 const Projects = ({ project, tech, source, git, img }) => {
-  const [expand, setExpand] = useState(null)
-  
-  
+  const [expand, setExpand] = useState(null);
+
   function isElementInViewport(el) {
     let rect = el.getBoundingClientRect();
     return (
@@ -17,28 +14,27 @@ const Projects = ({ project, tech, source, git, img }) => {
     );
   }
   function onScroll() {
-    if(!expand) {
-    let elements = document.getElementById("tech");
-    if (isElementInViewport(elements)) {
-      elements.classList.add("fade-in-down");
-    } else {
-      elements.classList.remove("fade-in-down");
+    if (!expand) {
+      let elements = document.getElementById("tech");
+      if (isElementInViewport(elements)) {
+        elements.classList.add("fade-in-down");
+      } else {
+        elements.classList.remove("fade-in-down");
+      }
     }
   }
-}
 
   window.addEventListener("scroll", onScroll);
 
   const handleExpand = () => {
     window.removeEventListener("scroll", onScroll);
-    setExpand(!expand)
-  }
+    setExpand(!expand);
+  };
 
   const handleShrink = () => {
     window.addEventListener("scroll", onScroll);
-    setExpand(!expand)
-  }
-
+    setExpand(!expand);
+  };
 
   const isSmall = window.innerWidth < 1000;
 
@@ -47,7 +43,7 @@ const Projects = ({ project, tech, source, git, img }) => {
       {expand ? (
         <div className="">
           <img
-          onClick={handleShrink}
+            onClick={handleShrink}
             alt="project"
             id="expanded"
             className="mb-10 rounded-md opacity-80 lg:opacity-60 hover:opacity-80 cursor-pointer"
@@ -57,18 +53,28 @@ const Projects = ({ project, tech, source, git, img }) => {
       ) : (
         <div className="flex lg:flex-row flex-col">
           <div className="mr-3 ml-3 lg:mr-20">
-            {!img ? (
-              "...Loading"
+            {git !== "https://jimmyvallejo.github.io/Breakout-Game-2D/" ? (
+              !img ? (
+                "...Loading"
+              ) : (
+                <img
+                  onClick={isSmall ? null : handleExpand}
+                  alt="project"
+                  id="tipster"
+                  className={`mb-10 rounded-md opacity-80 lg:opacity-60 hover:opacity-80 ${
+                    !isSmall && "cursor-pointer"
+                  }`}
+                  src={img}
+                ></img>
+              )
             ) : (
-              <img
-                onClick={isSmall ? null : handleExpand}
-                alt="project"
-                id="tipster"
-                className={`mb-10 rounded-md opacity-80 lg:opacity-60 hover:opacity-80 ${
-                  !isSmall && "cursor-pointer"
-                }`}
-                src={img}
-              ></img>
+              <iframe
+                src="https://jimmyvallejo.github.io/Breakout-Game-Small/"
+                width="510"
+                height="320"
+                className="rounded-md border border-slate-500"
+                title="Breakout"
+              ></iframe>
             )}
           </div>
           <div
@@ -76,7 +82,7 @@ const Projects = ({ project, tech, source, git, img }) => {
               isSmall ? "flex flex-col justify-center items-center" : ""
             }
           >
-            <p className="lg:text-left text-center mb-10 text-slate-300 leading-10 lg:leading-8  lg:ml-4 lg:mr-0 w-80">
+            <p className="lg:text-left text-center mb-10 text-slate-300 leading-10 lg:leading-8 lg:ml-4 lg:mr-0 w-80">
               {project}
             </p>
             <div className="flex justify-center mb-12 lg:mr-10">

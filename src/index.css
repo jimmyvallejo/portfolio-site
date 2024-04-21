@@ -14,7 +14,12 @@ nav {
   color: #64ffda;
 }
 
-
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .intro {
   padding-top: 60px;
@@ -33,7 +38,7 @@ nav {
 }
 
 .bio {
-  width: 350px;
+  width: 300px;
   opacity: 60%;
   transition: opacity 300ms ease-in-out;
   
