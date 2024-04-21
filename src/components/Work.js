@@ -29,15 +29,15 @@ import {
 } from "../constants/personal_projects";
 
 const Work = () => {
-  const [img, setImg] = useState(p5Img);
-  const [text, setText] = useState(p5);
-  const [tech, setTech] = useState(p4Tech);
-  const [source, setSource] = useState(p5Source);
-  const [git, setGit] = useState(p5Git);
+  const [img, setImg] = useState(p3Img);
+  const [text, setText] = useState(p3);
+  const [tech, setTech] = useState(p3Tech);
+  const [source, setSource] = useState(p3Source);
+  const [git, setGit] = useState(p3Git);
   const [hr1, setHr1] = useState(false);
   const [hr2, setHr2] = useState(false);
-  const [hr3, setHr3] = useState(false);
-  const [hr4, setHr4] = useState(true);
+  const [hr3, setHr3] = useState(true);
+  const [hr4, setHr4] = useState(false);
 
   const change1 = () => {
     setText(p1);
