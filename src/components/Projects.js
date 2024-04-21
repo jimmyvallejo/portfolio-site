@@ -52,7 +52,7 @@ const Projects = ({ project, tech, source, git, img }) => {
         </div>
       ) : (
         <div className="flex lg:flex-row flex-col">
-          <div className="mr-3 ml-3 lg:mr-20">
+          <div className="lg:mr-20">
             {git !== "https://jimmyvallejo.github.io/Breakout-Game-2D/" ? (
               !img ? (
                 "...Loading"
@@ -70,8 +70,8 @@ const Projects = ({ project, tech, source, git, img }) => {
             ) : (
               <iframe
                 src={isSmall ? "https://jimmyvallejo.github.io/Brick-Breaker-Mobile/" : "https://jimmyvallejo.github.io/Breakout-Game-Small/#"}
-                width="510"
-                height="320"
+                width={isSmall? "360" : "510"}
+                height={isSmall? "180" : "320"}
                 className="rounded-md border border-slate-500"
                 title="Breakout"
               ></iframe>
