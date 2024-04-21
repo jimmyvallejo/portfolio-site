@@ -72,7 +72,7 @@ const Projects = ({ project, tech, source, git, img }) => {
                 src={isSmall ? "https://jimmyvallejo.github.io/Brick-Breaker-Mobile/" : "https://jimmyvallejo.github.io/Breakout-Game-Small/#"}
                 width={isSmall? "360" : "510"}
                 height={isSmall? "180" : "320"}
-                className="rounded-md border border-slate-500"
+                className=" mb-10 rounded-md border border-slate-500"
                 title="Breakout"
               ></iframe>
             )}

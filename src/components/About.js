@@ -28,7 +28,7 @@ const About = () => {
 
   return (
     <div className="flex flex-col items-center lg:ml-0 lg:mt-40">
-      <div id="about" className="flex items-center mb-10 mt-60  ">
+      <div id="about" className="flex items-center mb-10 mt-80  ">
         <hr className="border-slate-300 w-20 lg:w-40 mx-4" />
         <h1 className="text-2xl text-slate-300">About {isWide && "Me"}</h1>
         <hr className="border-slate-300 w-20 lg:w-40 mx-4" />
@@ -50,7 +50,7 @@ const About = () => {
           
         </div>
       </div>
-      <p className="mt-10 text-slate-400 text-center  lg:ml-0">
+      <p className="mt-5 text-slate-400 text-center w-[77%]  lg:ml-0">
             Some of the technologies I've learned along the way.
           </p>
       <div className="flex text-green-200 my-5 mr-3">
