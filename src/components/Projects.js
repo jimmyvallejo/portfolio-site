@@ -69,7 +69,7 @@ const Projects = ({ project, tech, source, git, img }) => {
               )
             ) : (
               <iframe
-                src="https://jimmyvallejo.github.io/Breakout-Game-Small/"
+                src="https://jimmyvallejo.github.io/Breakout-Game-Small/#"
                 width="510"
                 height="320"
                 className="rounded-md border border-slate-500"
