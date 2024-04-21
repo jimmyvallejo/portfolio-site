@@ -69,11 +69,21 @@ const Projects = ({ project, tech, source, git, img }) => {
               )
             ) : (
               <iframe
-                src={isSmall ? "https://jimmyvallejo.github.io/Brick-Breaker-Mobile/" : "https://jimmyvallejo.github.io/Breakout-Game-Small/#"}
-                width={isSmall? "360" : "510"}
-                height={isSmall? "180" : "320"}
-                className=" mb-10 rounded-md border border-slate-500"
+                src={
+                  isSmall
+                    ? "https://jimmyvallejo.github.io/Brick-Breaker-Mobile/"
+                    : "https://jimmyvallejo.github.io/Breakout-Game-Small/#"
+                }
+                width={isSmall ? "360" : "510"}
+                height={isSmall ? "180" : "320"}
+                className="mb-10 rounded-md border border-slate-500"
                 title="Breakout"
+                style={{
+                  userSelect: "none",
+                  WebkitUserSelect: "none",
+                  MozUserSelect: "none",
+                  msUserSelect: "none",
+                }}
               ></iframe>
             )}
           </div>
