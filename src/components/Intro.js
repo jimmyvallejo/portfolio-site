@@ -45,10 +45,10 @@ const Intro = () => {
           <h1 className="text-6xl text-slate-100 mb-2">Jimmy.</h1>
           <h1 className="text-6xl text-slate-100 mb-4">Software Engineer</h1>
           <p
-            className="typewriter text-slate-500 leading-7 sm:w-45 "
+            className="typewriter text-slate-500 leading-7 sm:w-45 mb-20 lg:mb-0 "
             dangerouslySetInnerHTML={{ __html: typewriterText }}
           ></p>
-          <div className="lg:pt-0 pt-10">
+          <div className="lg:pt-0">
             <a
               href="https://drive.google.com/file/d/14tPFY3WPFIi5XbtdMOHxblPLyP8LZAfd/view?usp=sharing"
               className="resume inline-block border-solid border-2 border-green-200 text-green-200 text-center lg:mt-5 mt-25 py-2 px-5 hover:bg-green-200 hover:bg-opacity-50 cursor-pointer transition-all duration-300 ease-in-out"

@@ -10,7 +10,7 @@ const Footer = () => {
       <a className="cursor-pointer" href="https://github.com/jimmyvallejo">
         <img
           alt="github"
-          className="w-5 ml-2"
+          className="w-5 ml-2 mb-1"
           src={process.env.PUBLIC_URL + "/ghgrey.png"}
         ></img>
       </a>
@@ -20,7 +20,7 @@ const Footer = () => {
       >
         <img
           alt="linkedin"
-          className="w-6 ml-0.5 mb-0.5"
+          className="w-6 ml-0.5 mb-1"
           src={process.env.PUBLIC_URL + "/li.png"}
         ></img>
       </a>
