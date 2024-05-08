@@ -15,7 +15,7 @@ function App() {
               key={index}
               style={{
                 left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 15}s`,
+                animationDelay: `0.5s`,
                 animationDuration: `${Math.random() * 5 + 10}s`,
                 opacity: Math.random(),
                 scale: `${Math.random() * 0.5 + 0.5}`,

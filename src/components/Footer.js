@@ -20,7 +20,7 @@ const Footer = () => {
       >
         <img
           alt="linkedin"
-          className="w-6 ml-2"
+          className="w-6 ml-0.5 mb-0.5"
           src={process.env.PUBLIC_URL + "/li.png"}
         ></img>
       </a>
