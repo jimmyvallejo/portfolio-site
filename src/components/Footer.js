@@ -10,8 +10,8 @@ const Footer = () => {
       <a className="cursor-pointer" href="https://github.com/jimmyvallejo">
         <img
           alt="github"
-          className="w-6 ml-2"
-          src="https://cdn-icons-png.flaticon.com/512/3291/3291695.png"
+          className="w-5 ml-2"
+          src={process.env.PUBLIC_URL + "/ghgrey.png"}
         ></img>
       </a>
       <a
@@ -21,7 +21,7 @@ const Footer = () => {
         <img
           alt="linkedin"
           className="w-6 ml-2"
-          src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png"
+          src={process.env.PUBLIC_URL + "/li.png"}
         ></img>
       </a>
 
@@ -33,7 +33,7 @@ const Footer = () => {
         <img
           alt="top"
           className="w-10 cursor-pointer opacity-85"
-          src="https://cdn-icons-png.flaticon.com/512/3148/3148312.png"
+          src={process.env.PUBLIC_URL + "/top.png"}
           onClick={() => scroll.scrollToTop({ smooth: true, duration: 500 })}
         ></img>
       </div>
