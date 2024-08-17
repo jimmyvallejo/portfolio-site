@@ -59,13 +59,15 @@ const About = () => {
           <li className="list opacity-0 mt-2">- Express</li>
           <li className="list opacity-0 mt-2">- MongoDb</li>
           <li className="list opacity-0 mt-2">- GraphQL</li>
-          <li className="list opacity-0 mt-2">- MySQL</li>
+          <li className="list opacity-0 mt-2">- PostgresSQL</li>
           <li className="list opacity-0 mt-2">- Node.js</li>
+          <li className="list opacity-0 mt-2">- Docker</li>
         </ol>
         <ol className="ml-10">
           <li className="list opacity-0 mt-2">- JavaScript</li>
           <li className="list opacity-0 mt-2">- TypeScript</li>
           <li className="list opacity-0 mt-2">- Python</li>
+          <li className="list opacity-0 mt-2">- Golang</li>
           <li className="list opacity-0 mt-2">- Next.js</li>
           <li className="list opacity-0 mt-2">- MaterialUI</li>
           <li className="list opacity-0 mt-2">- Tailwind</li>
